@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace testconnectcenter.aw.net.Pages
+namespace testconnectcenter.Pages.Photos
 {
     public class PrivacyModel : PageModel
     {
