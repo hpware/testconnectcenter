@@ -1,0 +1,27 @@
+﻿@page
+@model testconnectcenter.Pages.redirectModel
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redirecting...</title>
+    <link href="~/1favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <script>
+        // Get the URL parameter from the query string
+        const urlParam = new URLSearchParams(window.location.search).get('c');
+
+        // Redirect to the specified URL
+        if (urlParam) {
+            window.location.href = urlParam;
+        } else {
+            document.body.innerHTML = '<p>No URL specified in the query string.</p>';
+        }
+    </script>
+</body>
+</html>
