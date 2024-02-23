@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
-namespace testconnectcenter.Pages.countdown
+namespace testconnectcenter.Pages.Archive
 {
     public class _3Model : PageModel
     {
