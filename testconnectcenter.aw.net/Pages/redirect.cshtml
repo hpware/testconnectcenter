@@ -7,20 +7,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Redirecting...</title>
-    <link href="~/1favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirect Page</title>
+    <link href="/ifavicon.ico" rel="shortcut icon" type="image/x-icon" />
 </head>
 <body>
     <script>
-        // Get the URL parameter from the query string
         const urlParam = new URLSearchParams(window.location.search).get('c');
+        const tokenURL = new URLSearchParams(window.location.search).get('token');
+        const systemRedirect = new URLSearchParams(window.location.search).get('system_redirect');
+        let tokenAuth = atob("Z280MGRqcWljbzN3b2QyaW9kMQ==");
+        let tokenAuthCheck1 = atob(tokenURL);
+        let ks = '';
+        let tokenAuthCheck2 = "0";
+        let tokenAuthCheck = tokenAuthCheck1 + tokenAuthCheck2 + ks;
 
         // Redirect to the specified URL
-        if (urlParam) {
-            window.location.href = urlParam;
+        if (tokenAuthCheck === tokenAuth) {
+            if (systemRedirect === '1') {
+                if (urlParam) {
+                    window.location.href = urlParam;
+                } else {
+                    document.body.innerHTML = '<p>Error. No URL specified in the query string. (ISSUE=0x670)</p>';
+                }
+            } else {
+                document.body.innerHTML = '<p>Error. No URL specified in the query string. (ISSUE=0x262)</p>';
+            }
         } else {
-            document.body.innerHTML = '<p>No URL specified in the query string.</p>';
+            document.body.innerHTML = '<p>Error. No requested key code. (ISSUE=0x836)</p>';
         }
     </script>
 </body>
