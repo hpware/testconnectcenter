@@ -24,29 +24,16 @@
                             <a class="nav-link text-dark" href="/redirect?c=https://cap.rcpet.edu.tw/&token=Z280MGRqcWljbzN3b2QyaW9k&system_redirect=1">🌐會考官網</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">會考倒數</a>
-                        </li>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/announcement/index">公告</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/countdown/4">⏳四模倒數</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/countdown/3">三模倒數</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/photos/4">🖼️四模照片</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/photos/3">三模照片</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/links">🔗連結</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/countdown/4">四模倒數</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/photos/4">四模照片</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/links">連結</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/redirect?c=https://github.com/ef7h/testconnectcenter&token=Z280MGRqcWljbzN3b2QyaW9k&system_redirect=1>⚡網站原始碼</a>
+                            <a class="nav-link text-dark" href="/redirect?c=https://github.com/ef7h/testconnectcenter&token=Z280MGRqcWljbzN3b2QyaW9k&system_redirect=1">⚡網站原始碼</a>
                         </li>
                     </ul>
                 </div>
@@ -63,7 +50,15 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SQK9FN01H"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
 
-    @await RenderSectionAsync("Scripts", required: false)
+        gtag('config', 'G-4SQK9FN01H');
+    </script>
+
 </body>
 </html>
