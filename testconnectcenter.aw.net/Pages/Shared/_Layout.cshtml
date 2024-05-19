@@ -10,10 +10,11 @@
     <link rel="stylesheet" href="~/testconnectcenter.aw.net.styles.css" asp-append-version="true" />
 </head>
 <body>
+
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">⏳會考倒數 </a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -21,19 +22,13 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="/redirect?c=https://cap.rcpet.edu.tw/&token=Z280MGRqcWljbzN3b2QyaW9k&system_redirect=1">🌐會考官網</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">⏳會考倒數</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/countdown/4">⏳四模倒數</a>
-                        </li>
+                            <a class="nav-link text-dark" href="https://cap.rcpet.edu.tw/">考試委員會</a>
+                            </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/photos/4">🖼️四模照片</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/links">🔗連結</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" href="/redirect?c=https://github.com/ef7h/testconnectcenter&token=Z280MGRqcWljbzN3b2QyaW9k&system_redirect=1">⚡網站原始碼</a>
+                            <a class="nav-link text-dark" href="https://cap.rcpet.edu.tw/113capexam.html">超難的113</a>
                         </li>
                     </ul>
                 </div>
@@ -43,6 +38,11 @@
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
+            <div>
+                <div>
+                    
+                </div>
+            </div>
         </main>
     </div>
 
@@ -50,15 +50,6 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4SQK9FN01H"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'G-4SQK9FN01H');
-    </script>
 
 </body>
 </html>

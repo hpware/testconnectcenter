@@ -6,4 +6,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Include="wwwroot\cshtml_temp\announcement\2024-2-6-5-55.cshtml.cs" />
+    <Compile Include="wwwroot\cshtml_temp\announcement\Index.cshtml.cs" />
+    <Compile Include="wwwroot\cshtml_temp\Archive\countdown\3-countdown.cshtml.cs" />
+    <Compile Include="wwwroot\cshtml_temp\Archive\photos\3-photos.cshtml.cs" />
+    <Compile Include="wwwroot\cshtml_temp\Archive\countdown\4.cshtml.cs" />
+    <Compile Include="wwwroot\cshtml_temp\Archive\photos\4.cshtml.cs" />
+    <Compile Include="wwwroot\cshtml_temp\links.cshtml.cs" />
+    <Compile Include="wwwroot\cshtml_temp\redirect.cshtml.cs" />
+  </ItemGroup>
+
 </Project>
