@@ -19,7 +19,7 @@
         let tokenAuth = atob("Z280MGRqcWljbzN3b2QyaW9kMQ==");
         let tokenAuthCheck1 = atob(tokenURL);
         let ks = '';
-        let tokenAuthCheck2 = "1";
+        let tokenAuthCheck2 = "0";
         let tokenAuthCheck = tokenAuthCheck1 + tokenAuthCheck2 + ks;
 
         // Redirect to the specified URL
@@ -31,7 +31,7 @@
                     document.body.innerHTML = '<p>Error. No URL specified in the query string. (ISSUE=0x670)</p>';
                 }
             } else {
-                document.body.innerHTML = '<p>Error. No URL specified in the query string. (ISSUE=0x262)</p>';
+                document.body.innerHTML = '<p>Error. No URL specified in the query string. (ISSUE=0x262) 專心</p>';
             }
         } else {
             document.body.innerHTML = '<p>Error. No requested key code. (ISSUE=0x836)</p>';
